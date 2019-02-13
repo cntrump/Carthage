@@ -1,13 +1,13 @@
 #!/usr/bin/xcrun make -f
 
 CARTHAGE_TEMPORARY_FOLDER?=/tmp/Carthage.dst
-PREFIX?=/usr/local
+PREFIX?=/opt/local
 
 INTERNAL_PACKAGE=CarthageApp.pkg
 OUTPUT_PACKAGE=Carthage.pkg
 
 CARTHAGE_EXECUTABLE=./.build/release/carthage
-BINARIES_FOLDER=/usr/local/bin
+BINARIES_FOLDER=/opt/local/bin
 
 # ZSH_COMMAND · run single command in `zsh` shell, ignoring most `zsh` startup files.
 ZSH_COMMAND := ZDOTDIR='/var/empty' zsh -o NO_GLOBAL_RCS -c
